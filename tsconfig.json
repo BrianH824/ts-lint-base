@@ -1,15 +1,18 @@
 {
   "compilerOptions": {
-    "module": "ESNext",
-    "moduleResolution": "Bundler",
-    "target": "ES2022",
+    "baseUrl": "src",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "module": "es6",
+    "lib": ["es2021", "dom"],
+    "moduleResolution": "node",
+    "target": "es2021",
     "jsx": "react",
     "strictNullChecks": true,
     "strictFunctionTypes": true,
-    "sourceMap": true
+    "sourceMap": true,
+    "noEmitOnError": true
   },
-  "exclude": [
-    "node_modules",
-    "**/node_modules/*"
-  ]
+  "include": ["src"],
+  "exclude": ["node_modules", "**/node_modules/*"]
 }
